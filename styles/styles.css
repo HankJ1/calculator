@@ -1,0 +1,57 @@
+
+
+
+.calc-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    height: 500px;
+    width: 450px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    grid-template-areas: 
+        "inputs inputs inputs inputs"
+        "clear plusminus percent divide"
+        "seven eight nine multiply"
+        "four five six minus"
+        "one two three plus"
+        "zero zero decimal equals";
+}
+
+    .calc-box > div {
+        border: 1px solid black;
+    }
+
+.input {
+    grid-area: inputs;
+    
+}
+    #input {
+        font-size: 1.5em;
+    }
+
+.zero {
+    grid-area: zero;
+}
+
+button {
+    height: 100%;
+    width: 100%;
+}
+
+.backspaceimg {
+    height: 32px;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 4%;
+}
+.operator:focus {
+    outline: 3px solid purple;
+}
+
+  
