@@ -30,7 +30,7 @@
     
 }
     #input {
-        font-size: 1.5em;
+        font-size: 22px;
     }
 
 .zero {
@@ -40,6 +40,12 @@
 button {
     height: 100%;
     width: 100%;
+}
+.number {
+    font-size: 16px;
+}
+.operator {
+    font-size: 18px;
 }
 
 .backspaceimg {
